@@ -13,7 +13,7 @@ int main()
 	struct sockaddr_in sa, cli;
 
 	sockfd = socket(AF_INET, SOCK_STREAM, 0);
-	printf("Socket id is: %d\n", sockfd);
+	printf("Socket opened...\n");
 
 	bzero(&sa, sizeof(sa));
 	sa.sin_port = htons(5600);
